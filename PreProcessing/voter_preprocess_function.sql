@@ -1,4 +1,4 @@
-CREATE FUNCTION voter_preprocess(republican_percentage DOUBLE, county STRING, precinct STRING, sex STRING, race STRING, 
+CREATE OR REPLACE FUNCTION voter_preprocess(republican_percentage DOUBLE, county STRING, precinct STRING, sex STRING, race STRING, 
                                  ethnicity STRING, age INT) 
 RETURNS TABLE(republican_percentage DOUBLE, county INT, precinct INT, sex INT, race INT, ethnicity INT, age INT) 
 LANGUAGE PYTHON

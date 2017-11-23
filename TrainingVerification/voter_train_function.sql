@@ -1,4 +1,4 @@
-CREATE FUNCTION voter_train
+CREATE OR REPLACE FUNCTION voter_train
                     (republican_percentage DOUBLE, county INT, precinct INT, sex INT, race INT, ethnicity INT, age INT) 
 RETURNS TABLE(cl_name STRING, cl_obj STRING)
 LANGUAGE PYTHON

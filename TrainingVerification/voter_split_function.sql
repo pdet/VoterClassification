@@ -1,4 +1,4 @@
-CREATE FUNCTION voter_split(precinct INT, id INT)
+CREATE OR REPLACE FUNCTION voter_split(precinct INT, id INT)
 RETURNS TABLE(id INT, train BOOLEAN)
 LANGUAGE PYTHON
 {

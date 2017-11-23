@@ -1,4 +1,4 @@
-CREATE FUNCTION voter_predict(county INT, precinct INT, sex INT, race INT, ethnicity INT, age INT, id INT) 
+CREATE OR REPLACE FUNCTION voter_predict(county INT, precinct INT, sex INT, race INT, ethnicity INT, age INT, id INT) 
 RETURNS TABLE(id INT, prediction STRING) 
 LANGUAGE PYTHON
 {
