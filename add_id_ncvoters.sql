@@ -1,0 +1,1 @@
+ALTER TABLE ncvoters_preprocessed ADD id INTEGER NOT NULL AUTO_INCREMENT;
